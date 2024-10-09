@@ -1,5 +1,6 @@
 #Ex1
 #Deciding whether the number is divisible by both 3 and 5, just 3, just 5, or neither.
+print("Exercise 1:")
 def fizzbuzz(n):
     if i % 3 == 0 and i % 5 == 0:
         print("FizzBuzz")
@@ -17,6 +18,7 @@ for i in range(1,21):
 
 #Ex2
 #filter instances of int out of the list and create to the new one
+print("Exercise 2:")
 mixed_list = [10, "Hello", 3.14, 20, "World", 7, 8.9]
 
 filtered_list = [x for x in mixed_list if isinstance(x, int)]
@@ -27,6 +29,7 @@ print(filtered_list)
 
 #Ex3
 #simple to do list to add and check exisiting elements in the list
+print("Exercise 3:")
 todo_list = []
 
 def add_task(task):
@@ -51,7 +54,8 @@ show_tasks()
 #- Throw out trash"
 
 #Ex4
-#changing celsius temperature into a fahrenheit
+#changing celsius temperature into a Fahrenheit
+print("Exercise 4:")
 def celsius_to_fahrenheit(celsius):
     return (celsius * 9/5) + 32
 
