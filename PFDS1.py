@@ -1,74 +1,54 @@
+# PFDS1.py - Python Fundamental Exercises
 
-# Ex. 1:
+# Exercise 1: Basic print statement
+# This prints a basic "Hello, Python!" message.
 print("Hello, Python!")
 
-# Ex. 2:
+# Exercise 2: Sum of two numbers
+# This calculates the sum of two integers a and b.
 a = 12
 b = 98
 print("Sum:", a + b)
-print("Difference:", a - b)
-print("Product:", a * b)
-print("Quotient:", a / b)
+# Output: Sum: 110
 
-#Ex. 3:
-name = "Aleks"
-print(f"Hello, {name}!")
+# Exercise 3: Check if a number is even or odd
+# Takes an integer and checks if it is even or odd.
+num = 13
+if num % 2 == 0:
+    print("The number is even.")
+else:
+    print("The number is odd.")
+# Output: The number is odd.
 
-#Ex. 4:
-universities = ["StGallen", "MIT", "Esade", "UAB", "SGH"]
-print("Universities list:", universities)
-print("First university:", universities[0])
-print("Last university:", universities[-1])
-
-# Ex. 5:
-student = {
-    "name": "Aleks",
-    "age": 24,
-    "grade": 7
-}
-for key, value in student.items():
-    print(f"{key}: {value}")
-
-# Ex. 6:
-coordinates = (50, 109)
-print("Coordinates tuple:", coordinates)
-print("X:", coordinates[0])
-print("Y:", coordinates[1])
-
-# Ex. 7:
-colors = {"red", "green", "blue"}
-colors.add("yellow")
-colors.add("red")  # Attempt to add a duplicate
-print("Colors set:", colors)
-colors.remove("green")
-
-light_colors = {"white", "pink"}
-all_colors = colors.union(light_colors)
-print("Merged set:", all_colors)
-
-# Ex. 8:
-number = float(input("Enter a number: "))
+# Exercise 4: Check if a number is positive, negative, or zero
+# Takes an integer as input and checks if it's positive, negative, or zero.
+number = -7
 if number > 0:
     print("The number is positive.")
 elif number < 0:
     print("The number is negative.")
 else:
     print("The number is zero.")
+# Output: The number is negative.
 
-# Ex. 9:
+# Exercise 5: Print each number in a list
+# Iterates through a list and prints each number.
 numbers = [1, 2, 3, 4, 5]
 for num in numbers:
     print(num)
+# Output: 1, 2, 3, 4, 5
 
-# Ex. 10:
+# Exercise 6: While loop example
+# Prints numbers 1 to 5 using a while loop.
 count = 1
 while count <= 5:
     print(count)
     count += 1
+# Output: 1, 2, 3, 4, 5
 
-# Ex. 11
-
-grade = input("Enter a grade (A, B, C, D, F): ").upper()
+# Exercise 7: Matching grades with messages
+# Takes a letter grade and matches it with a corresponding message.
+grade = "A"
 match grade:
     case "A":
         print("Excellent!")
@@ -82,33 +62,45 @@ match grade:
         print("Failing.")
     case _:
         print("Invalid grade entered.")
+# Output: Excellent!
 
-# Ex. 12
+# Exercise 8: Function to greet a user by name
+# Takes a name as input and prints a greeting message.
 def greet(name):
     print(f"Hello, {name}!")
 
 greet("Aleks")
+# Output: Hello, Aleks!
 
-# Ex. 13:
+# Exercise 9: Function to calculate the square of a number
+# Takes a number as input and returns its square.
 def square(number):
     return number ** 2
 
 print("Square of 17:", square(17))
+# Output: Square of 17: 289
 print("Square of 909:", square(909))
+# Output: Square of 909: 826281
 
-# Ex. 14:
+# Exercise 10: Function with default arguments
+# Multiplies two numbers. The second number has a default value of 1.
 def multiply(a, b=1):
     return a * b
 
 print("Multiply 3 and 4:", multiply(3, 4))
+# Output: Multiply 3 and 4: 12
 print("Multiply 5:", multiply(5))
+# Output: Multiply 5: 5
 
-# Ex. 15:
+# Exercise 11: List comprehension to create a list of squares
+# Generates a list of squares from numbers 1 to 10.
 numbers = list(range(1, 11))
 squares = [num ** 2 for num in numbers]
 print("Squares:", squares)
+# Output: Squares: [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
-# Ex. 16:
+# Exercise 12: Dictionary and average grade calculation
+# Stores student grades in a dictionary and calculates the average for each student.
 students_grades = {
     "Alice": [85, 90, 78],
     "Bob": [75, 80, 72],
@@ -121,9 +113,10 @@ def print_average_grades(students):
         print(f"{student}'s average grade: {average:.2f}")
 
 print_average_grades(students_grades)
+# Output: Alice's average grade: 84.33, Bob's average grade: 75.67, Charlie's average grade: 95.67
 
-# Ex 17:
-
+# Exercise 13: Basic calculator function
+# Takes two numbers and an operator (+, -, *, /) as input and performs the corresponding operation.
 def calculate(num1, num2, operator):
     if operator == "+":
         return num1 + num2
@@ -136,10 +129,10 @@ def calculate(num1, num2, operator):
     else:
         return "Invalid operator"
 
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
-operator = input("Enter an operator (+, -, *, /): ")
-
+num1 = 25
+num2 = 5
+operator = "+"
 result = calculate(num1, num2, operator)
 print(f"The result is: {result}")
-
+# Output: The result is: 30
+"""
