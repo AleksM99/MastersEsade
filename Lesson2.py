@@ -1,41 +1,43 @@
-#Ex1
-#Deciding whether the number is divisible by both 3 and 5, just 3, just 5, or neither.
-print("Exercise 1:")
+"""
+# Lesson2.py - Python Exercises
+
+# Exercise 1: FizzBuzz
+# This function checks whether a number is divisible by both 3 and 5, just by 3, just by 5, or by neither.
 def fizzbuzz(n):
-    if i % 3 == 0 and i % 5 == 0:
+    if n % 3 == 0 and n % 5 == 0:
         print("FizzBuzz")
-    elif i % 3 == 0:
+    elif n % 3 == 0:
         print("Fizz")
-    elif i % 5 == 0:
+    elif n % 5 == 0:
         print("Buzz")
     else:
-        print(i)
+        print(n)
 
-
-for i in range(1,21):
+# Loop through numbers from 1 to 20 and apply the fizzbuzz function
+for i in range(1, 21):
     fizzbuzz(i)
-#output: 1,2Fizz,3,4,Buzz,Fizz,7,8,Fizz,Buzz,11,Fizz,13,14,FizzBuzz,16,17,Fizz,19,Buzz
+# Output: 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16, 17, Fizz, 19, Buzz
 
-#Ex2
-#filter instances of int out of the list and create to the new one
-print("Exercise 2:")
+# Exercise 2: Filter integers from a list
+# This creates a new list containing only the integer values from a mixed list.
 mixed_list = [10, "Hello", 3.14, 20, "World", 7, 8.9]
 
+# Using list comprehension to filter out integers
 filtered_list = [x for x in mixed_list if isinstance(x, int)]
 
 print(filtered_list)
+# Output: [10, 20, 7]
 
-#output: [10, 20, 7]
-
-#Ex3
-#simple to do list to add and check exisiting elements in the list
-print("Exercise 3:")
+# Exercise 3: Simple To-Do List
+# This creates a to-do list, allows adding tasks, and displaying all tasks in the list.
 todo_list = []
 
+# Function to add a task to the to-do list
 def add_task(task):
     todo_list.append(task)
     print(f"Task '{task}' added to the list.")
 
+# Function to display tasks
 def show_tasks():
     if todo_list:
         print("Tasks:")
@@ -44,25 +46,28 @@ def show_tasks():
     else:
         print("No tasks in the to-do list.")
 
+# Add tasks and display them
 add_task("Do laundry")
-#output: "Task 'Do laundry' added to the list."
+# Output: "Task 'Do laundry' added to the list."
 add_task("Throw out trash")
-#output: "Task 'Throw out trash' added to the list."
+# Output: "Task 'Throw out trash' added to the list."
 show_tasks()
-#output: "Tasks:
-#- Do laundry
-#- Throw out trash"
+# Output: Tasks:
+# - Do laundry
+# - Throw out trash
 
-#Ex4
-#changing celsius temperature into a Fahrenheit
-print("Exercise 4:")
+# Exercise 4: Celsius to Fahrenheit Conversion
+# Converts a temperature from Celsius to Fahrenheit using the formula (Celsius * 9/5) + 32
 def celsius_to_fahrenheit(celsius):
     return (celsius * 9/5) + 32
 
 temperatures_celsius = [22, 46, 51, 76]
+
+# Loop through temperatures in Celsius and convert them to Fahrenheit
 for temp in temperatures_celsius:
     print(f"{temp}°C is {celsius_to_fahrenheit(temp)}°F")
-
-#output: "22°C is 71.6°F
-#46°C is 114.8°F
-#51°C is 123.8°F"
+# Output: 22°C is 71.6°F
+#         46°C is 114.8°F
+#         51°C is 123.8°F
+#         76°C is 168.8°F
+"""
