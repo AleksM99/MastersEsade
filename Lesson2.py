@@ -1,4 +1,4 @@
-"""
+
 # Lesson2.py - Python Exercises
 
 # Exercise 1: FizzBuzz
@@ -70,4 +70,4 @@ for temp in temperatures_celsius:
 #         46°C is 114.8°F
 #         51°C is 123.8°F
 #         76°C is 168.8°F
-"""
+
