@@ -29,7 +29,8 @@ The Student Course Registration System is a Python-based application designed to
 - Calculate GPA based on the enrolled courses and assigned grades.
 - View all registered students and courses.
 
-Session 4
+4. Session 4
+
 This notebook provides solutions to analyze and organize satellite annotation files. Each file follows a specific naming convention.
 
 Structure:
