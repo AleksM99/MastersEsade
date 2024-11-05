@@ -20,7 +20,7 @@ This repository contains the Python assignments completed as part of the coursew
 
 Both scripts provide hands-on experience in implementing key Python concepts.
 
-3. Project 3
+3. **Project 3**
 
 The Student Course Registration System is a Python-based application designed to manage students, courses, enrollments, and grades. The system allows students to enroll in courses, assign grades, and calculate GPAs. The project utilizes object-oriented programming principles like inheritance, encapsulation, and abstraction.
 
@@ -29,7 +29,7 @@ The Student Course Registration System is a Python-based application designed to
 - Calculate GPA based on the enrolled courses and assigned grades.
 - View all registered students and courses.
 
-4. Session 4
+4. **Session 4**
 This notebook provides solutions to analyze and organize satellite annotation files. Each file follows a specific naming convention.
 
 Structure:
@@ -65,3 +65,25 @@ Identifies the satellite used in the most recent annotation.
 7. Count Unique Regions
 Calculates the number of unique regions across all annotation files.
 
+5. **Session 5 project**
+This project provides code for analyzing satellite annotation files stored in the format {DATE}_{TIME}_SN{SATELLITE_NUMBER}_QUICKVIEW_VISUAL_{VERSION}_{UNIQUE_REGION}.txt. The code answers questions about these files, including organizing them by month, filtering based on date, and serializing data to JSON and Pickle formats.
+
+Requirements
+Python 3.x
+Libraries:
+pandas for data manipulation
+datetime for date parsing and manipulation
+re for regular expression matching
+json for saving data in JSON format
+pickle for saving data in Pickle format
+
+1. Monthly Annotations Count
+Counts annotations per month and year and identifies the month with the highest count using pandas.
+2. Dictionary of Annotations by Month
+Creates a dictionary where each month is a key, and the value is a list of annotations for that month.
+Saves this dictionary to a JSON file and loads it to verify.
+Saves the same dictionary to a Pickle file and loads it to verify.
+Creates a more detailed dictionary where each annotation is stored as a dictionary with name and date keys.
+3. Filtering and Sorting by Date
+Filters and sorts annotations in the second half of 2024 (July to December).
+Prints the annotations in chronological order from oldest to newest.
