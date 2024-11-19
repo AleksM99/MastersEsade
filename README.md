@@ -109,5 +109,33 @@ Calculate Gender-Based Survival Percentage - By grouping data by sex and averagi
 
 Calculate Survival Percentage Grouped by Gender and Class - Grouping by both sex and class allows us to see survival percentages across these categories, providing deeper insights into survival factors.
 
+7.**Session 7**
+
+
+Overview
+
+File Structure
+Assignment7.ipynb:
+The primary Jupyter Notebook containing all relevant code, instructions, and analysis. 
+
+Prerequisites
+To run this assignment, ensure you have the following:
+
+Python Environment: Install Python 3.7 or later.
+Jupyter Notebook: Ensure Jupyter is installed. 
+Required Libraries: Install the dependencies listed below:
+
+pip install pandas
+
+The notebook includes exercises focusing on Pandas II, specifically:
+
+Handling Missing Data:
+Potential transformations or imputations to manage gaps in datasets; often using other data.
+
+Data Transformation:
+Methods to reshape and manipulate data for analysis, such as pivoting, merging, or grouping; as well as creating new columns based on other ones; merging and joining two data frames.
+
+
+
 
 
