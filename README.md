@@ -138,6 +138,59 @@ Data Transformation:
 Methods to reshape and manipulate data for analysis, such as pivoting, merging, or grouping; as well as creating new columns based on other ones; merging and joining two data frames.
 
 
+8. **Session 8**
+Data Visualization and Analysis with Python
+
+This project demonstrates how to use Python libraries to perform data analysis and visualization. It involves analyzing a dataset of students, courses, grades, and study habits. The exercises include generating insightful visualizations and extracting meaningful statistics.
+
+Libraries Used
+Pandas: For data manipulation and analysis.
+NumPy: For numerical computations.
+Matplotlib: For creating static, interactive, and dynamic visualizations.
+Seaborn: For high-level interface for attractive and informative statistical graphics.
+To install the libraries:
+pip install pandas numpy matplotlib seaborn
+
+Exercises
+1. Line Plot: Study Time by Student
+We visualized each student's study time using a line plot to identify trends. The student with the highest study time was highlighted programmatically.
+
+Key Functionality: sns.lineplot
+Key Insight: Identified the student with the highest study time.
+2. Histogram: Grade Distribution
+We created a histogram to understand the distribution of student grades and determined the most frequent grade range dynamically.
+
+Key Functionality: sns.histplot, np.histogram
+Key Insight: Identified the grade range with the highest frequency.
+3. ECDF Plot: Grades
+Using an Empirical Cumulative Distribution Function (ECDF) plot, we visualized the cumulative grade distribution to find the percentage of students scoring below a specific grade.
+
+Key Functionality: sns.ecdfplot
+Key Insight: Calculated the percentage of students scoring below a specified threshold.
+4. Strip Plot: Grade Distribution by Course
+We visualized how grades are distributed for each course using a strip plot. The course with the most spread in grades was calculated programmatically.
+
+Key Functionality: sns.stripplot
+Key Insight: Identified the course with the widest grade spread.
+5. Swarm Plot: Study Time by Gender
+A swarm plot was used to compare study times between genders, and the average study time for each gender was calculated.
+
+Key Functionality: sns.swarmplot
+Key Insight: Visualized and compared study habits across genders.
+6. Point Plot: Average Grade by Course
+We used a point plot to display the average grade for each course. The course with the highest average grade was identified.
+
+Key Functionality: sns.pointplot
+Key Insight: Highlighted the course with the best average performance.
+Running the Code
+Ensure Python 3.x is installed on your system.
+Install the required libraries.
+Run the script containing the exercises to generate visualizations and insights.
+Key Learnings
+Visualization helps uncover trends and insights from data.
+
+
+
 
 
 
